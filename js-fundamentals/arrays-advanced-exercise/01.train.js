@@ -3,7 +3,7 @@ function train(input) {
   let maxCapacity = Number(input.shift());
   let result = addWagon(input, wagons, maxCapacity);
   return result;
-  //console.log(result);
+  
   function addWagon(input, wagons, maxCapacity) {
     for (let i = 0; i < input.length; i++) {
       let element = input[i].split(" ");
