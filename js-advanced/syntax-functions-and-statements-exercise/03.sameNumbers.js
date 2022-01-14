@@ -11,4 +11,4 @@ function solved(input) {
     console.log(check);
     console.log(sum);
   }
-solved(1234);
+
