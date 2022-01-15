@@ -4,13 +4,13 @@ function solved(steps, footprintInMeters, speedKm) {
   let rest = Math.floor(distance / 500) * 60;
   let time = distance / speed + rest;
   let hour = Math.floor(time / 3600)
-    .toFixed(0)
+    .toString()
     .padStart(2, "0");
   let min = Math.floor(time / 60)
-    .toFixed(0)
+    .toString()
     .padStart(2, "0");
   let sec = Math.round(time % 60)
-    .toFixed(0)
+    .toString()
     .padStart(2, "0");
   console.log(`${hour}:${min}:${sec}`);
 }
