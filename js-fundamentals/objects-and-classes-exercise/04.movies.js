@@ -1,10 +1,8 @@
 function solved(array) {
-  let result = "";
   let movies = [];
 
   for (const arr of array) {
     let line = arr.slice(0, 9);
-    let name = "";
     if (line == "addMovie ") {
       movies.push({
         name: arr.slice(9),
@@ -31,4 +29,3 @@ function solved(array) {
     }
   }
 }
-
